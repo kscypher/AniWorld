@@ -1,0 +1,21 @@
+extends layout
+block content 
+ .container 
+  h1 Register
+  p.lead 
+   form(role='form', action='/', method='post') 
+    .form-group 
+     label(for='username') Username
+     input.form-control(type='text', id='user', name='username', placeholder='enter a username')
+    .form-group 
+     label(for='password')  Password
+     input.form-control(type='password', id='password', name='password', placeholder='enter a password')
+    .form-group 
+     label(for='email')  Email
+     input.form-control(type='email', id='email', name='email', placeholder='enter an email address')
+    .form-group
+     label(for='confirm') Confirm Password
+     input.form-control(type='password', id='confirm', name='confirm', placeholder='confirm your password')
+    button.btn.btn-primary(type='submit' ) Submit
+    &nbsp;
+    a.btn.btn-default(role='button', href='/') Cancel
